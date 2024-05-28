@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #ddc269;
+}
+
+.boton1, .boton2{
+width: 150px;
+margin-right: 20px;
+}
+
+.nomPa{
+    display: flex;
+    justify-content: center;
+}
+
+.redir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.redir{
+    margin: 0%;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #ecc954;
+}
+
+.direc{
+    display: flex;
+    justify-content: center;
+}
