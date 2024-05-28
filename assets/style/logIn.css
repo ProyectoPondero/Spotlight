@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas:
+    "up"
+    "medium"
+    "down";
+}
+
+body header {
+    background-color: darkorange;
+    grid-area: up;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: medium;
+    height: 90vh;
+}
+
+body footer {
+    background-color: darkorange;
+    grid-area: down;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
