@@ -4,40 +4,137 @@
     box-sizing: border-box;
 }
 
+header{
+    grid-area: header;
+}
+
 nav{
     background-color: #ddc269;
+    height: 85px;
 }
 
-.boton1, .boton2{
-width: 150px;
-margin-right: 20px;
-}
-
-.nomPa{
+.contenedorNav{
     display: flex;
     justify-content: center;
-}
-
-.redir{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.redir{
-    margin: 0%;
-}
-
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    height: 70px;
-    background-color: #ecc954;
 }
 
-.direc{
+.titulo{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+.iconoPag{
+    height: 80px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "navPrincipal navPrincipal navPrincipal"
+    "aside1 contPrincipal aside2";
+}
+
+.asideIzq{
+    grid-area: aside1;
+}
+
+.asideDer{
+    grid-area: aside2;
+}
+
+.principal{
+    grid-area: contPrincipal;
+}
+
+.opcionesNav div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.opcionesNav div a{
+    text-decoration: none;
+    color: #7a3a3a;
+    padding-top: 20px;
+}
+
+.opcionesNav div{
+    position: fixed;
+}
+
+/*  AQUI SE COPIÓ EL CODIGO DE LA HAMBURGUESA */
+
+.hamburger-icon {
+    display: none; /* Hidden by default */
+    width: 35px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hamburger-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #f5f1f1;
+    border-radius: 2px;
+}
+
+.menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.menu-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+@media(max-width: 720px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "navPrincipal navPrincipal navPrincipal"
+        "contPrincipal contPrincipal aside2";
+    }
+    .asideIzq{
+        display: none;
+    }
+    .hamburguesa{
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+
+
 }

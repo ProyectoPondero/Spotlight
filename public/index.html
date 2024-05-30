@@ -11,39 +11,48 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div>
-                <a class="navbar-brand" href="#">SpotLight</a>
+    <header>
+    <nav>
+        <div class="contenedorNav container-fluid">
+            <img class="iconoPag" src="/assets/img/imagenes-Marcelo/icono.png" alt="iconoPrincipal">
+            <div class="container-fluid">
+            <span class="titulo">SpotLight</span>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="direc d-flex container-fluid collapse navbar-collapse" id="navbarNav">
-                <ul class="redir container-fluid">
-                    <li>
-                        <a class="" href="#">Home</a>
-                    </li>
-                    <li class="">
-                        <a class="" href="#">Features</a>
-                    </li>
-                    <li class="">
-                        <a class="" href="#">Pricing</a>
-                    </li>
-                    <li class="">
-                        <a class="">Disabled</a>
-                    </li>
-                </ul>
+            <div class="hamburger-icon" id="hamburgerIcon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="Registro">
-                <form class="d-flex" role="Sesion">
-                    <button class="boton1 btn btn-outline-danger" type="submit">Registrarse</button>
-                    <button class="boton2 btn btn-outline-danger" type="submit">Acceder</button>
-                </form>
+            <div class="menu" id="menu">
+                <a href="#home" class="menu-item" style="color: rgb(60, 59, 58); font-family: 'Courier New', Courier, monospace; font-size: 20px;"><img src="/assets/img/imagenes-Marcelo/casita.png" alt="">Home</a>
+                <a href="#perfil" class="menu-item" style="color: rgb(67, 67, 67); font-family: 'Courier New', Courier, monospace; font-size: 20px;"><img src="/assets/img/imagenes-Marcelo/perfil.png" alt="">Perfil</a>
+                <a href="#mensaje" class="menu-item" style="color: rgb(77, 75, 72); font-family: 'Courier New', Courier, monospace; font-size: 20px;"><img src="/assets/img/imagenes-Marcelo/mensaje.png" alt="">Mensajes</a>
+                <a href="#mensaje" class="menu-item" style="color: rgb(77, 75, 72); font-family: 'Courier New', Courier, monospace; font-size: 20px;"><img src="/assets/img/imagenes-Marcelo/soporte.png" alt="">Soporte Técnico</a>
             </div>
         </div>
     </nav>
+</header>
+    <aside class="asideIzq">
+        <ul class="opcionesNav">
+            <div>
+                <a href=""><span><img src="/assets/img/imagenes-Marcelo/casita.png" alt="iconoHome">Home</span></a>
+                <a href=""><span><img src="/assets/img/imagenes-Marcelo/perfil.png" alt="iconoHome">Perfil</span></a>
+                <a href=""><span><img src="/assets/img/imagenes-Marcelo/mensaje.png" alt="iconoHome">Mensaje</span></a>
+                <a href=""><span><img src="/assets/img/imagenes-Marcelo/soporte.png" alt="iconoHome">Soporte Técnico</span></a>
+            </div>
+        </ul>
+    </aside>
+
+    <main class="principal">
+        <p>holaMain</p>
+    </main>
+
+    <aside class="asideDer">
+        <p>hola2</p>
+    </aside>
+
+    <script src="/assets/scrips/scrip.js"> </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
