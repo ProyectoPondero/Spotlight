@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-header{
-    grid-area: header;
-}
-
-nav{
-    background-color: #ddc269;
-    height: 85px;
-}
-
 .contenedorNav{
     display: flex;
     justify-content: center;
@@ -35,8 +26,13 @@ body{
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header"
-    "navPrincipal navPrincipal navPrincipal"
     "aside1 contPrincipal aside2";
+}
+
+.header{
+    grid-area: header;
+    background-color: #ddc269;
+    height: 85px;
 }
 
 .asideIzq{
@@ -122,7 +118,7 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "navPrincipal navPrincipal navPrincipal"
+        grid-template-areas: "header header header"
         "contPrincipal contPrincipal aside2";
     }
     .asideIzq{
