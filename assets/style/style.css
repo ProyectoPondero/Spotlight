@@ -10,6 +10,21 @@
     align-items: center;
 }
 
+.navLinks a{
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 2px #219EBC;
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px rgb(0, 89, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+.navLinks a:hover{
+    background-color: rgb(59, 47, 47);
+    color: rgb(255, 253, 253);
+}
+
+
+
 .titulo{
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
@@ -17,26 +32,44 @@
 }
 
 .iconoPag{
-    height: 80px;
+    height: 50px;
 }
 
 body{
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header"
-    "aside1 contPrincipal aside2";
+    grid-template-areas: "header header header header"
+    "mein mein mein mein";
+}
+
+main{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "aside1 contPrincipal aside2";
+    height: 100vh;
+
 }
 
 .header{
     grid-area: header;
-    background-color: #ddc269;
-    height: 85px;
+    background:linear-gradient(#000000,#232323) ;
+    height: 67px;
+}
+
+.mein{
+    grid-area: mein;
 }
 
 .asideIzq{
+    display: flex;
     grid-area: aside1;
+    background:linear-gradient(#242323,#232323) ;
+}
+
+.asideIzq ul{
+    padding: 5px;
 }
 
 .asideDer{
@@ -45,6 +78,7 @@ body{
 
 .principal{
     grid-area: contPrincipal;
+    background-color: whitesmoke;
 }
 
 .opcionesNav div{
@@ -52,14 +86,20 @@ body{
     flex-direction: column;
 }
 
+
 .opcionesNav div a{
     text-decoration: none;
     color: #7a3a3a;
     padding-top: 20px;
 }
-
-.opcionesNav div{
-    position: fixed;
+.boton{
+    border-radius: 10px;
+    background: linear-gradient(#1d43ee, whitesmoke);
+}
+.boton:hover{
+    background: linear-gradient(rgb(7, 5, 7),white);
+    height: 35px;
+    color: white;
 }
 
 /*  AQUI SE COPIÓ EL CODIGO DE LA HAMBURGUESA */
@@ -116,20 +156,29 @@ body{
 @media(max-width: 720px) {
     body{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "header header header"
-        "contPrincipal contPrincipal aside2";
+        "mein mein mein";
     }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "contPrincipal contPrincipal aside2";
+        height: 100vh;
+    }
+
     .asideIzq{
         display: none;
-    }
-    .hamburguesa{
-        display: block;
     }
 
     .hamburger-icon {
         display: flex;
+    }
+
+    .navLinks a{
+        display: none;
     }
 
 
