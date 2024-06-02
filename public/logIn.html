@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../assets/style/logIn.css">
-    <title></title>
+    <title>Spotlight</title>
 </head>
 
 <body>
@@ -15,54 +16,113 @@
         <p>LOGO Spotlight</p>
     </header>
     <main>
+
         <!-- Boton Registo -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRegistro">
             Registo
         </button>
 
         <!-- Modal Registro -->
-        <article class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <article class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <section class="modal-header">
+                        <h3>Registro</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                    </section>
+                    <section class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="registroEmail" placeholder="Ejemplo@email.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="registroNombre" placeholder="Ana, Carlos, etc...">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="registroContraseña">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Repetir Contraseña</label>
+                                <input type="password" class="form-control" id="registroRepetirContraseña">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Provinca</label>
+                                <select id="registroProvincia" class="form-select">
+                                    <option selected>Elegir...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Ciudad</label>
+                                <select id="registroCiudad" class="form-select">
+                                    <option selected>Elegir...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Acepto los terminos y condiciones
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </section>
                 </div>
             </div>
         </article>
 
-
         <!-- Boton Ingreso -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIngreso">
             Ingresar
         </button>
 
         <!-- Modal Ingreso -->
-        <article class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <article class="modal fade" id="modalIngreso" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <header class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <section class="modal-header">
+                        <h3>Ingreso</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </header>
-                    <main class="modal-body">
-                        ...
-                    </main>
-                    <footer class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </footer>
+                    </section>
+                    <section class="modal-body">
+                        <form id="formularioIgreso">
+                            <div class="col-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="ingresoEmail" placeholder="Ejemplo@email.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="ingresoContraseña">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Recordarme
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </section>
                 </div>
             </div>
         </article>
+
     </main>
     <footer>
         <p>Equipo de desarrollo Pondero</p>
