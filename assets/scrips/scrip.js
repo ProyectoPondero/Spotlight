@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerIcon.style.display = 'flex';
         } else {
             hamburgerIcon.style.display = 'none';
-            menu.style.display = 'none'; // Hide menu if screen is resized above 699px
+            menu.style.display = 'none'; 
         }
     };
 
