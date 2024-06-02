@@ -14,9 +14,11 @@
     <header class="header">
         <nav>
             <div class="contenedorNav container-fluid">
-                <img class="iconoPag" src="/assets/img/imagenes-Marcelo/icons8-fuego-40.png" alt="iconoPrincipal">
                 <div class="container-fluid" style="display: flex;">
-                    <span class="titulo">SpotLight</span>
+                    <article class="logoPag">
+                        <img class="iconoPag" src="/assets/img/imagenes-Marcelo/icons8-fuego-40.png" alt="iconoPrincipal"><span class="titulo">SpotLight</span>
+                    </article>
+                        
                     <div class="navLinks container" style="display: flex; justify-content: space-evenly; align-items: end;">
                         <a href="#"><span>Descubre</span></a>
                         <a href="#"><span>Noticias</span></a>
@@ -54,25 +56,49 @@
     <main class="mein">
         <aside class="asideIzq">
             <ul class="opcionesNav">
-                <div>
-                    <div class="esteHome container-fluid" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                        <a href=""><button type="button" class="boton d-flex flex-direction-row" style="width: 161px;">
-                        <article><img src="/assets/img/imagenes-Marcelo/casita.png" alt="iconoHome"></article>Home</button></a>
+                <div class="opcionesIzq">
+                    <div class="esteHome container-fluid">
+                        <a class="nav-link active text-light" role="button" href="index.html">
+                            <img src="/assets/img/imagenes-Marcelo/casita.png" alt=""><span style="margin-left: 10px;">Home</span>
+                        </a>
                     </div>
-                    <div class="esteHome container-fluid" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                        <a href=""><button type="button" class="boton d-flex flex-direction-row" style="width: 161px;"> <article><img src="/assets/img/imagenes-Marcelo/perfil.png" alt="iconoHome"></article>Perfil</button></a>
+                    <div class="esteHome container-fluid">
+                        <a class="nav-link active text-light" role="button" aria-current="page" href="#">
+                            <img src="/assets/img/imagenes-Marcelo/perfil.png" alt=""><span style="margin-left: 10px;">Perfil</span>
+                        </a>
                     </div>
-                    <div class="esteHome container-fluid" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                        <a href=""><button type="button" class="boton d-flex flex-direction-row" style="width: 161px;">
-                        <article><img src="/assets/img/imagenes-Marcelo/mensaje.png" alt="iconoHome"></article>Mensajes</button></a>
+                    <div class="esteHome container-fluid">
+                       <div class="nav-item">
+                        <article class="nav-link active text-light" role="button" aria-current="page" href="#">
+                            <img src="/assets/img/imagenes-Marcelo/mensaje.png" alt=""><a style="margin-left: 10px;">Mensajes</a>
+                        </article>
+                       </div>
+                          </li>
                     </div>
-                    <div class="esteHome container-fluid" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                        <a href=""><button type="button" class="boton d-flex flex-direction-row" style="width: 161px;">
-                        <article><img src="/assets/img/imagenes-Marcelo/soporte.png" alt="iconoHome"></article>Soporte técnico</button></a>
+                    <div class="esteHome container-fluid nav-item dropdown">
+                        <article class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/img/imagenes-Marcelo/soporte.png" alt="">
+                            <a style="margin-left: 10px;">Soporte</a>
+                        </article>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </div>
                 </div>
             </ul>
-            <footer class="carrus">
+        </aside>
+        <article class="principal text-light">
+            <p>holaMain</p>
+        </article>
+
+        <aside class="asideDer text-light">
+            <div class="text-light">
+                <h3 class="text-center">hola que tal</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit obcaecati a ex facilis officia officiis quibusdam fuga quasi voluptate!</p>
+            </div>
+            <footer class="carrus pt-5">
                 <h4 class="text-light text-center">OFERTAS</h4>
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -102,13 +128,6 @@
                     </button>
                   </div>
             <footer>
-        </aside>
-        <article class="principal">
-            <p>holaMain</p>
-        </article>
-
-        <aside class="asideDer">
-            <p>hola2</p>
         </aside>
     </main>
 
