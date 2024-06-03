@@ -19,13 +19,17 @@
 
 .navLinks a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #dbc7bd;
     font-family: "north";
     font-size: 19px;
 }
 .navLinks a:hover{
-    border-bottom: solid 2px rgb(233, 199, 6);
-    border-radius: 4px;
+    border-radius: 10px;
+    color: #F6EBE6;
+    padding: 6px;
+    height: 32px;
+    font-size: 20px;
+    transition: 0.5s;
 }
 
 .logoPag{
@@ -38,12 +42,20 @@
 .titulo{
     font-size: 30px;
     font-family: "north";
-    color: whitesmoke;
+    color: #dbc7bd;
     margin-left: 10px;
+}
+
+.titulo:hover{
+    color: white;
 }
 
 .iconoPag{
     height: 45px;
+}
+
+.iconoPag:hover{
+    height: 47px;
 }
 
 body{
@@ -56,7 +68,7 @@ body{
 
 .header{
     grid-area: header;
-    background:linear-gradient(#000000,#232323) ;
+    background:linear-gradient(#511301, #1E1715) ;
     height: 67px;
     position: fixed;
     top: 0;
@@ -66,7 +78,7 @@ body{
 
 .mein{
     grid-area: mein;
-    background-color: #232323;
+    background-color: #1E1715;
     padding-top: 80px;
     padding-left: 100px;
     padding-right: 100px;
@@ -74,13 +86,18 @@ body{
     margin-top: 60px;
 }
 
+.form{
+    border-radius: 25px;
+}
+
 .formulario{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 0.5fr);
-    background-color: #484b52;
-    border: solid 1px black;
+    grid-template-rows: repeat(5, 0.8fr);
     border-radius: 20px;
+    padding: 8px;
+    background-color: #3B2D27;
+    width: 650px;
 }
 
 .animo{
@@ -116,7 +133,7 @@ body{
     grid-row: 5;
     grid-column: 4/5;
     border-radius: 10px;
-    background-color: orange;
+    background-color: #FF4B00;
     font-family: "north";
     height: 30px;
     margin-bottom: 5px;
@@ -129,7 +146,7 @@ body{
 
 .asideIzq{
     grid-area: aside1;
-    background-color: #232323;
+    background-color: #1E1715;
     border-right: solid 1px #ddd;
     padding-top: 20px;
     margin-top: 60px;
@@ -147,15 +164,15 @@ body{
 
 .asideDer{
     grid-area: aside2;
-            background-color: #232323;
-            padding-top: 80px;
-            height: 100vh;
-            position: fixed;
-            top: 67px;
-            right: 0;
-            width: 19.8%;
-            overflow-y: auto;
-            padding: 25px;
+    background-color: #1E1715;
+    padding-top: 80px;
+    height: 100vh;
+    position: fixed;
+    top: 67px;
+    right: 0;
+    width: 19.8%;
+    overflow-y: auto;
+    padding: 25px;
 }
 
 .esteHome{
@@ -172,6 +189,11 @@ body{
 }
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
+.contenedorNav button{
+    background-color: #e47549;
+    height: 30px;
+    width: 33px;
+}
 .setLight{
     display: flex;
     color: rgb(0, 0, 0);
@@ -179,8 +201,7 @@ body{
     margin-right: 20px;
     margin-top: 25px;
     padding: 5px;
-    border: solid 1px white;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .setDark{
@@ -195,7 +216,7 @@ body{
 }
 
 .setLight:hover {
-    color: rgb(230, 195, 1);
+    color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     border-color: black;
 }
