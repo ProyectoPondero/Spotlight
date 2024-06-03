@@ -18,14 +18,14 @@
     <main>
 
         <!-- Boton Registo -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRegistro">
+        <button type="button" class="boton btn" data-bs-toggle="modal" data-bs-target="#modalRegistro">
             Registo
         </button>
 
         <!-- Modal Registro -->
         <article class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <section class="modal-header">
                         <h3>Registro</h3>
@@ -33,21 +33,21 @@
                     </section>
                     <section class="modal-body">
                         <form class="row g-3">
-                            <div class="col-12">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" id="registroEmail" placeholder="Ejemplo@email.com">
+                            <div class="form-floating col-12">
+                                <input type="text" class="form-control" id="registroUsuario" placeholder="user">
+                                <label for="registroUsuario" class="form-label mx-2">Usuario</label>
                             </div>
-                            <div class="col-12">
-                                <label class="form-label">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="registroNombre" placeholder="Ana, Carlos, etc...">
+                            <div class="form-floating col-12">
+                                <input type="email" class="form-control" id="registroEmail" placeholder="email">
+                                <label for="registroEmail" class="form-label mx-2">Email</label>
                             </div>
-                            <div class="col-12">
-                                <label class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="registroContraseña">
+                            <div class="form-floating col-12">
+                                <input type="password" class="form-control" id="registroContraseña" placeholder="password">
+                                <label for="registroContraseña" class="form-label mx-2">Contraseña</label>
                             </div>
-                            <div class="col-12">
-                                <label class="form-label">Repetir Contraseña</label>
-                                <input type="password" class="form-control" id="registroRepetirContraseña">
+                            <div class="form-floating col-12">
+                                <input type="password" class="form-control" id="registroRepetirContraseña" placeholder="repeatPassword">
+                                <label for="registroRepetirContraseña" class="form-label mx-2">Repetir Contraseña</label>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Provinca</label>
@@ -63,7 +63,7 @@
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="col-12">
+                            <div class="col-8 ms-2">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="gridCheck">
                                     <label class="form-check-label" for="gridCheck">
@@ -74,15 +74,15 @@
                         </form>
                     </section>
                     <section class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Registrar</button>
+                        <button type="button" class="boton2 btn" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="boton1 btn text-white">Registrar</button>
                     </section>
                 </div>
             </div>
         </article>
 
         <!-- Boton Ingreso -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIngreso">
+        <button type="button" class="boton btn" data-bs-toggle="modal" data-bs-target="#modalIngreso">
             Ingresar
         </button>
 
@@ -97,15 +97,15 @@
                     </section>
                     <section class="modal-body">
                         <form id="formularioIgreso">
-                            <div class="col-12">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" id="ingresoEmail" placeholder="Ejemplo@email.com">
+                            <div class="form-floating col-12 mb-3">
+                                <input type="email" class="form-control" id="ingresoEmail" placeholder="email">
+                                <label for="ingresoEmail" class="form-label mx-2">Email</label>
                             </div>
-                            <div class="col-12">
-                                <label class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="ingresoContraseña">
+                            <div class="form-floating col-12 mb-3">
+                                <input type="password" class="form-control" id="ingresoContraseña" placeholder="password">
+                                <label for="ingresoContraseña" class="form-label mx-2">Contraseña</label>
                             </div>
-                            <div class="col-12 mt-3">
+                            <div class="col-12 mt-3 ms-2">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="gridCheck">
                                     <label class="form-check-label" for="gridCheck">
@@ -116,8 +116,8 @@
                         </form>
                     </section>
                     <section class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        <button type="button" class="boton2 btn" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="boton1 btn text-white">Ingresar</button>
                     </section>
                 </div>
             </div>
