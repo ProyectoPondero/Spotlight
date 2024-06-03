@@ -48,7 +48,7 @@
 
 body{
     display: grid;
-    grid-template-columns: 0.19fr 1fr 0.3fr;
+    grid-template-columns: 0.22fr 1fr 0.3fr;
     grid-template-rows: auto;
     grid-template-areas: "header header header"
     "aside1 mein aside2";
@@ -133,6 +133,11 @@ body{
     border-right: solid 1px #ddd;
     padding-top: 20px;
     margin-top: 60px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 14.5%;
+    ;
 }
 
 .asideIzq ul{
@@ -142,9 +147,15 @@ body{
 
 .asideDer{
     grid-area: aside2;
-    background-color: #232323;
-    padding-top: 50px;
-    margin-top: 60px;
+            background-color: #232323;
+            padding-top: 80px;
+            height: 100vh;
+            position: fixed;
+            top: 67px;
+            right: 0;
+            width: 19.8%;
+            overflow-y: auto;
+            padding: 25px;
 }
 
 .esteHome{
