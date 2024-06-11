@@ -21,13 +21,13 @@
                         <img class="iconoPag" src="/assets/img/imagenes-Marcelo/icono.png" alt="iconoPrincipal"><span class="titulo">SpotLight</span>
                     </article>
                         
-                    <div class="navLinks container" style="display: flex; justify-content: space-evenly; align-items: end;">
-                        <a href="#" class="text-center"><span>Descubre</span></a>
-                        <a href="#" class="text-center"><span>Noticias</span></a>
-                        <a href="#" class="text-center"><span>Comunidad</span></a>
-                        <a href="#" class="text-center"><span>Reglas</span></a>
+                    <div class="navLinks container" style="display: flex; align-items: end; ">
+                        <a href="#" class="text-center"><i class="fa-regular fa-compass"></i><span>Descubrir</span></a>
+                        <a href="#" class="text-center"><i class="fa-solid fa-newspaper"></i><span>Noticias</span></a>
+                        <a href="#" class="text-center"><i class="fa-solid fa-user-group"></i><span>Comunidad</span></a>
+                        <a href="#" class="text-center"><i class="fa-solid fa-scale-balanced"></i><span>Reglas</span></a>
                     </div>
-                    <button href="#" type="button" class="setLight"><i class="fas fa-moon"></i></button>                   
+                    <button href="#" type="button" class="botonLuna setLight"><i class="fas fa-moon"></i></button>                   
                 </div>
                 <div class="hamburger-icon" id="hamburgerIcon">
                     <div></div>
@@ -36,6 +36,7 @@
                     <div></div>
                 </div>
                 <div class="menu" id="menu">
+                    <button href="#" type="button" class="setLight"><i class="fas fa-moon"></i></button> 
                     <a href="index.html" class="menu-item"
                         style="color: rgb(60, 59, 58); font-family: 'Courier New', Courier, monospace; font-size: 20px;"><i class="iconIzq fas fa-home home-icon" style="margin-right: 10px;"></i><span>Home</span></a>
                     <a href="#perfil" class="menu-item"
@@ -56,61 +57,65 @@
     <aside class="asideIzq">
             <ul class="opcionesNav pb-5">
                 <div class="opcionesIzq">
-                    <div class="esteHome container-fluid">
-                        <a class="nav-link active text-light" role="button" href="index.html">
-                            <i class="iconIzq fas fa-home home-icon"></i><span style="margin-left: 10px;">Home</span>
-                        </a>
-                    </div>
-                    <div class="esteHome container-fluid">
-                        <a class="nav-link active text-light" role="button" aria-current="page" href="#">
-                            <i class="iconIzq fa-solid fa-user"></i><span style="margin-left: 10px;">Perfil</span>
-                        </a>
-                    </div>
-                    <div class="esteHome container-fluid">
-                       <div class="nav-item">
-                        <a class="nav-link active text-light" role="button" aria-current="page" href="#">
-                            <i class="iconIzq fa-regular fa-message"></i><span style="margin-left: 10px;">Mensajes</span>
-                        </a>
-                       </div>
-                          </li>
-                    </div>
                     <div class="esteHome container-fluid nav-item dropdown">
-                        <article class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="iconIzq fa-solid fa-headset"></i>
-                            <a style="margin-left: 10px;">Soporte</a>
+                        <div class="iconI pt-2">
+                            <i class="iconosNavizq fa fa-home"></i>
+                            <a href="#"style="margin-left: 13px;"></i>Home</a>
+                        </div>
+                        
+                        <div class="iconI pt-3">
+                            <i class="iconosNavizq fa fa-user"></i>
+                            <a href="#" style="margin-left: 15px;">Perfil</a>
+                        </div>
+
+                        <div class="iconI pt-3">
+                            <i class="iconosNavizq fa fa-message"></i>
+                            <a href="#" style="margin-left: 13px;">Mensajes</a>
+                        </div>
+                        <article class="nav-link dropdown-toggle pt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="soport">
+                        <i class="iconosNavizq fa-solid fa-headset"></i>
+                        <a class="botonSoporte" style="margin-left: 13px;">Soporte</a>
+                        </div>
                         </article>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                          <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider text-dark"></li>
+                          <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
                         </ul>
+                    </div>
+                    <div class="PublicarAlgo pt-2 text-center">
+                        <h4>Publica algo!</h4>
+                        <p class="motivacion">Alguien espera por tí, no dejes pasar esta oportunidad</p>
+                        <button class="botonSubir" style="height: 45px;border-radius: 20px; background-color: rgb(238, 144, 20); width: 105px;"><i class="fa-regular fa-pen-to-square"></i><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(2, 2, 2);">SUBIR</span></button>
+                        </div>
                     </div>
                 </div>
             </ul>
         </aside>
         
         <main  class="mein" style="color: rgb(255, 255, 255);">
-            <div class="form container" style="display: flex; justify-content: center;">
-                <article class="container" style="width: 600px;">
-                    <form action="subete" class="formulario">
-                        <p class="animo">Alguien busca tu talento!</p>
-                        <P class="orden">Presume lo que sabes hacer:</P>
-                        <input class="publi" type="text" name="publicacion" id="texto" placeholder="Escriba algo..">
-                        <input class="botonSubir" type="button" value="Publicar"> 
-                        <input class="elegirA" type="file" name="multimedia" id="multi">
-                    </form>
-                </article>
-            </div>
+    
+        </div>
                 
         </main>
 
         <aside class="asideDer text-light">
-            <div class="text-light">
-                <h3 class="text-center">hola que tal</h3>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit obcaecati a ex facilis officia officiis quibusdam fuga quasi voluptate!</p>
+            <div class="text-light text-center">
+                    <div class="filtrosDeBusqueda pb-3">
+                        <span class="text-dark" style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Preferencias</span>
+                        <a class="filtros btn btn-dark" href="">Música</a>
+                        <a class="filtros btn btn-dark" href="">Deportes</a>
+                        <a class="filtros btn btn-dark" href="">Arte</a>
+                        <a class="filtros btn btn-dark" href="">Diseño</a>
+                        <a class="filtros btn btn-dark" href="">Fotografía</a>
+                        <a class="filtros btn btn-dark" href="">Tutorias</a>
+                        <a class="filtros btn btn-dark" href="">Lenguaje</a>
+                        <a class="filtros btn btn-dark" href="">Informática</a>
+                    </div>
             </div>
             <footer class="carrus pt-5">
-                <h4 class="text-light text-center pb-3">Recomendaciones de usuarios</h4>
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -138,6 +143,9 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
+                  <h4 class="text-dark text-center pt-2" style="font-family: Arial, Helvetica, sans-serif;">Ofertas de usuarios</h4>
+
+                  
             <footer>
     </aside>
 

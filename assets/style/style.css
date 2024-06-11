@@ -17,50 +17,52 @@
     align-items: center;
 }
 
+
 .navLinks a{
     text-decoration: none;
-    color: #dbc7bd;
-    font-family: "north";
+    color: #313131;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
+    border-color: #2e2e2e;
+    border-radius: 4px;
+    margin-left: 45px;
 }
 .navLinks a:hover{
-    border-radius: 10px;
-    color: #F6EBE6;
+    color: #000000;
+    border-radius: 15px;
+    background-color: #d67a2f;
     padding: 6px;
-    height: 32px;
+    height: 35px;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .logoPag{
     display: flex;
-    margin-top: 10px;
     justify-content: center;
+    margin-top: 13px;
     align-items: center;
 }
 
 .titulo{
-    font-size: 30px;
-    font-family: "north";
-    color: #dbc7bd;
-    margin-left: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    margin-left: 13px;
 }
 
 .titulo:hover{
-    color: white;
+    color: rgb(64, 66, 66);
 }
 
 .iconoPag{
     height: 45px;
-}
-
-.iconoPag:hover{
-    height: 47px;
+    margin-top: 6px;
 }
 
 body{
     display: grid;
-    grid-template-columns: 0.22fr 1fr 0.3fr;
+    grid-template-columns: 0.33fr 1.5fr 0.3fr;
     grid-template-rows: auto;
     grid-template-areas: "header header header"
     "aside1 mein aside2";
@@ -68,17 +70,18 @@ body{
 
 .header{
     grid-area: header;
-    background:linear-gradient(#511301, #1E1715) ;
-    height: 67px;
+    background: linear-gradient(#111113, #d8d8d8) ;
+    height: 80px;
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
+    border-bottom: solid 1px gray;
 }
 
 .mein{
     grid-area: mein;
-    background-color: #1E1715;
+    background-color: #d8d8d8;
     padding-top: 80px;
     padding-left: 100px;
     padding-right: 100px;
@@ -86,75 +89,16 @@ body{
     margin-top: 60px;
 }
 
-.form{
-    border-radius: 25px;
-}
-
-.formulario{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 0.8fr);
-    border-radius: 20px;
-    padding: 8px;
-    background-color: #3B2D27;
-    width: 650px;
-}
-
-.animo{
-    margin-top: 10px;
-    font-family: "norh";
-    grid-row: 1;
-    grid-column: 1/3;
-    font-size: 18px;
-}
-
-.orden{
-    font-family: "norh";
-    grid-row:2 ;
-    grid-column: 1/3;
-    font-size: 18px;
-}
-
-.publi{
-    grid-column: 1/-1;
-    grid-row: 3/5;
-    border-radius: 17px;
-}
-.elegirA{
-    grid-row: 5;
-    grid-column: 1/3;
-    border-radius: 35px;
-    font-family: "north";
-    margin-top: 5px;
-    background-color: rgb(94, 93, 93);
-}
-
-.botonSubir{
-    grid-row: 5;
-    grid-column: 4/5;
-    border-radius: 10px;
-    background-color: #FF4B00;
-    font-family: "north";
-    height: 30px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.submit{
-    width: 50px;
-}
-
 .asideIzq{
     grid-area: aside1;
-    background-color: #1E1715;
-    border-right: solid 1px #ddd;
+    background-color:#d8d8d8;
+    border-right: solid 1px #5c5c5c;
     padding-top: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
     position: fixed;
+    width: 15.5%;
     height: 100%;
     top: 0;
-    width: 14.5%;
-    ;
 }
 
 .asideIzq ul{
@@ -164,13 +108,13 @@ body{
 
 .asideDer{
     grid-area: aside2;
-    background-color: #1E1715;
-    padding-top: 80px;
-    height: 100vh;
+    background-color: #d8d8d8;
+    margin-top: 13px;
+    height: 100%;
     position: fixed;
     top: 67px;
     right: 0;
-    width: 19.8%;
+    width: 230px;
     overflow-y: auto;
     padding: 25px;
 }
@@ -178,25 +122,62 @@ body{
 .esteHome{
     display: flex;
     flex-direction: column;
-    padding-top: 17px;
-    font-family: "north";
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
-.esteHome img{
-    width: 30px;
-    height: 30px;
+.esteHome a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.esteHome a:hover{
+    color: whitesmoke;
+}
+
+.iconI{
+    display: flex;
+    align-items: center;
+}
+
+.iconI:hover{
+    background-color: #264653;
+    border-radius: 15px;
+    width: 170px;
+    height: 62px;
+}
+
+.iconosNavizq{
+    color: #F4A261;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    font-size: 26px;
+}
+
+
+.soport:hover{
+    background-color: #264653;
+    border-radius: 15px;
+    width: 170px;
+}
+
+.filtros{
+    
+    padding-right: 5px;
+    margin-top: 5px;
 }
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
 .contenedorNav button{
-    background-color: #e47549;
+    background-color: #000000;
     height: 30px;
     width: 33px;
 }
 .setLight{
     display: flex;
-    color: rgb(0, 0, 0);
+    color: rgb(243, 243, 243);
     align-items: center;
     margin-right: 20px;
     margin-top: 25px;
@@ -216,8 +197,8 @@ body{
 }
 
 .setLight:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 253, 253);
     border-color: black;
 }
 
@@ -228,7 +209,7 @@ body{
 }
 
 .iconIzq{
-    color: rgb(236, 202, 137);
+    color: rgb(0, 0, 0);
 }
 
 /*  AQUI SE COPIÓ EL CODIGO DE LA HAMBURGUESA */
@@ -278,6 +259,18 @@ body{
     background-color: #f0f0f0;
 }
 
+.carrus{
+    height: 300px;
+    width: 200px;
+    border-radius: 25px;
+    background-image: url(../img/imagenes-Marcelo/phone-2245651_640.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 205px;
+    background-position-y: top;
+    border: solid 1px black;
+}
+
 
 
 
@@ -285,10 +278,14 @@ body{
 @media(max-width: 720px) {
     body{
         display: grid;
-        grid-template-columns: 1fr  1fr 0.5fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "header header header"
-        "mein mein aside2";
+        "mein mein mein";
+    }
+
+    .contenedorNav .botonLuna{
+        display: none;
     }
 
     .asideIzq{
@@ -319,5 +316,28 @@ body{
     .iconIzq{
         color: rgb(35, 30, 51);
     }
+
+    .asideDer{
+        display: none;
+    }
+
+}
+
+@media(max-width: 960px) {
+
+    .iconI{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .soport{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 
 }
