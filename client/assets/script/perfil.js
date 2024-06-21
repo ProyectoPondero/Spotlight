@@ -24,3 +24,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toggleHamburgerIcon(); // Initial check
 });
+editarTodo.addEventListener("click", () => {
+    if (editarTodo.id == "modeColor" ) {
+        editarTodo.id = "otroModo"
+        editarTodo.innerHTML = `<i class="fa-solid fa-sun"></i>`
+        main[0].style.backgroundColor = "#343A40"
+        header[0].style.background = "#343A40"
+        asideIzq[0].style.background = "#343A40"
+        asideDer[0].style.background = "#343A40"
+        titulo[0].style.color = "white"
+        soport[0].style.color = "white"
+        backSoporte[0].style.backgroundColor = "#343A40";
+        publicarAlgo1[0].style.color = "#F48C06"
+        publicarAlgo2[0].style.color = "white"
+
+        links.forEach(link => {
+            link.style.color = '#FAA307'; 
+        });
+        
+        links2.forEach(link => {
+            link.style.color = 'white'; 
+        });
+
+        nick.forEach(link => {
+            link.style.color = '#E9ECEF'; 
+        });
+
+        iconI.forEach(link => {
+            link.style.color = 'white'; 
+        });
+
+        descripcion.forEach(link => {
+            link.style.color = '#E9ECEF'; 
+        });
+
+
+
+    } else {
+        location.reload()
+    }
+    
+});
