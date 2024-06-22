@@ -13,12 +13,14 @@
 
 <body>
     <header>
-        <p>LOGO Spotlight</p>
+        <div class="container d-flex justify-content-center align-items-center my-2">
+            <img class="iconoPag" src="../assets/img/iconoLogo.png" alt="iconoPrincipal"><span class="titulo">Spotlight</span>
+        </div>
     </header>
     <main>
 
         <!-- Boton Registo -->
-        <button type="button" class="boton btn" data-bs-toggle="modal" data-bs-target="#modalRegistro">
+        <button type="button" class="boton btn fw-bolder" data-bs-toggle="modal" data-bs-target="#modalRegistro">
             Registro
         </button>
 
@@ -46,7 +48,7 @@
                                 <label for="registroContraseña" class="form-label mx-2">Contraseña</label>
                             </div>
                             <div class="form-floating col-12">
-                                <input type="password" class="form-control" id="registroRepetirContraseña" placeholder=" ">
+                                <input type="password" class="form-control" name="repetirContraseña" id="registroRepetirContraseña" placeholder=" ">
                                 <label for="registroRepetirContraseña" class="form-label mx-2">Repetir Contraseña</label>
                             </div>
                             <div class="col-8 ms-2">
@@ -68,7 +70,7 @@
         </article>
 
         <!-- Boton Ingreso -->
-        <button type="button" class="boton btn" data-bs-toggle="modal" data-bs-target="#modalIngreso">
+        <button type="button" class="boton btn fw-bolder" data-bs-toggle="modal" data-bs-target="#modalIngreso">
             Ingresar
         </button>
 
@@ -110,7 +112,7 @@
         </article>
 
     </main>
-    <footer>
+    <footer class="fw-bolder">
         <p>Equipo de desarrollo Pondero</p>
     </footer>
     <script src="../assets/script/logIn.js"></script>

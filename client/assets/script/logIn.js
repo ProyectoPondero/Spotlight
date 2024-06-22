@@ -28,6 +28,15 @@ registerForm.addEventListener('submit', async (event) => {
     const userName = formData.get('usuario');
     const email = formData.get('email');
     const password = formData.get('contraseña');
+    const repeatPassword = formData.get('repetirContraseña');
+    if (!userName.trim() || !email.trim() || !password.trim()) {
+        alert('Todos los campos son obligatorios.');
+        return;
+    }
+    if (password !== repeatPassword) {
+        alert('Las contraseñas deben coincidir.');
+        return;
+    }
     const data = { userName, email, password };
     const res = await registerDataBase(data);
     if (res) {
