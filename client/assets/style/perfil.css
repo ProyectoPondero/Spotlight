@@ -123,10 +123,11 @@ body {
     width: 100%;
     font-size: 1.75em;
     margin-bottom: 0.5rem;
+    color: black;
 }
 
 .seccion-perfil-usuario .perfil-usuario-body .texto {
-    color: #848484;
+    color: #4d4d4d;
     font-size: 0.95em;
 }
 
@@ -207,7 +208,7 @@ body {
 }
 
 header {
-    background: linear-gradient(#434349, #d8d8d8);
+    background-color: #343A40;
     width: 100%;
     height: 70px;
 }
@@ -215,19 +216,20 @@ header {
 .navLinks {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 18px;
-    margin-right: 250px;
+    width: 80%;
 }
 
-.navLinks a {
+.navLinks div a {
     text-decoration: none;
-    color: #313131;
+    color: rgb(230, 230, 230);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     border-color: #2e2e2e;
     border-radius: 4px;
-    margin-left: 45px;
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .navLinks a:hover {
@@ -246,25 +248,23 @@ header {
 }
 
 .titulo {
-    font-size: 28px;
+    font-size: 29px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 13px;
+    color: rgb(224, 224, 224);
 }
 
 .titulo:hover {
-    color: rgb(64, 66, 66);
+    font-size: 30px;
+    transition: 0.5s;
 }
+
 
 .iconoPag {
     height: 50px;
     margin-left: 15px;
 }
 
-.header {
-    background: linear-gradient(#434349, #d8d8d8);
-    width: 100%;
-    border-bottom: solid 1px gray;
-}
 
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
@@ -309,6 +309,14 @@ header {
 
 .iconIzq {
     color: rgb(0, 0, 0);
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    
 }
 
 /*  AQUI SE COPIÓ EL CODIGO DE LA HAMBURGUESA */
