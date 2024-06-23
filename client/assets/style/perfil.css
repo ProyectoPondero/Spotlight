@@ -45,7 +45,7 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-.fotoPerfil{
+.fotoPerfil {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@ body {
     border-radius: 60%;
 }
 
-.perfil{
+.perfil {
     height: 220px;
     border-radius: 60%;
     width: 250px;
@@ -200,26 +200,26 @@ body {
     background: linear-gradient(45deg, #FF2DFD, #40A7FF);
 }
 
-.contenedorNav{
+.contenedorNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-header{
-    background: linear-gradient(#434349, #d8d8d8) ;
+header {
+    background: linear-gradient(#434349, #d8d8d8);
     width: 100%;
     height: 70px;
 }
 
-.navLinks{
-display: flex;
-align-items: center;
-margin-top: 18px;
-margin-right: 250px;
+.navLinks {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    margin-right: 250px;
 }
 
-.navLinks a{
+.navLinks a {
     text-decoration: none;
     color: #313131;
     font-family: Arial, Helvetica, sans-serif;
@@ -230,7 +230,7 @@ margin-right: 250px;
     margin-bottom: 5px;
 }
 
-.navLinks a:hover{
+.navLinks a:hover {
     color: #000000;
     border-radius: 15px;
     background-color: #d67a2f;
@@ -239,41 +239,42 @@ margin-right: 250px;
     transition: 0.7s;
 }
 
-.logoPag{
+.logoPag {
     display: flex;
     margin-top: 13px;
     align-items: center;
 }
 
-.titulo{
+.titulo {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 13px;
 }
 
-.titulo:hover{
+.titulo:hover {
     color: rgb(64, 66, 66);
 }
 
-.iconoPag{
+.iconoPag {
     height: 50px;
     margin-left: 15px;
 }
 
-.header{
-    background: linear-gradient(#434349, #d8d8d8) ;
+.header {
+    background: linear-gradient(#434349, #d8d8d8);
     width: 100%;
     border-bottom: solid 1px gray;
 }
 
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
-.contenedorNav button{
+.contenedorNav button {
     background-color: #000000;
     height: 30px;
     width: 33px;
 }
-.setLight{
+
+.setLight {
     display: flex;
     color: rgb(243, 243, 243);
     align-items: center;
@@ -283,7 +284,7 @@ margin-right: 250px;
     border-radius: 16px;
 }
 
-.setDark{
+.setDark {
     display: flex;
     color: rgb(255, 255, 255);
     align-items: center;
@@ -300,20 +301,21 @@ margin-right: 250px;
     border-color: black;
 }
 
-.setDark{
+.setDark {
     color: rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
     border-color: rgb(190, 162, 0);
 }
 
-.iconIzq{
+.iconIzq {
     color: rgb(0, 0, 0);
 }
 
 /*  AQUI SE COPIÓ EL CODIGO DE LA HAMBURGUESA */
 
 .hamburger-icon {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     width: 35px;
     height: 30px;
     flex-direction: column;
@@ -331,7 +333,8 @@ margin-right: 250px;
 }
 
 .menu {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     flex-direction: column;
     position: absolute;
     top: 50px;
@@ -360,15 +363,15 @@ margin-right: 250px;
 
 @media(max-width: 720px) {
 
-     .hamburger-icon {
+    .hamburger-icon {
         display: flex;
     }
 
-    .navLinks a{
+    .navLinks a {
         display: none;
     }
 
-    .setLight{
+    .setLight {
         display: none;
     }
 }

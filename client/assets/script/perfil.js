@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerIcon.style.display = 'flex';
         } else {
             hamburgerIcon.style.display = 'none';
-            menu.style.display = 'none'; 
+            menu.style.display = 'none';
         }
     };
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleHamburgerIcon(); // Initial check
 });
 editarTodo.addEventListener("click", () => {
-    if (editarTodo.id == "modeColor" ) {
+    if (editarTodo.id == "modeColor") {
         editarTodo.id = "otroModo"
         editarTodo.innerHTML = `<i class="fa-solid fa-sun"></i>`
         main[0].style.backgroundColor = "#343A40"
@@ -39,23 +39,23 @@ editarTodo.addEventListener("click", () => {
         publicarAlgo2[0].style.color = "white"
 
         links.forEach(link => {
-            link.style.color = '#FAA307'; 
+            link.style.color = '#FAA307';
         });
-        
+
         links2.forEach(link => {
-            link.style.color = 'white'; 
+            link.style.color = 'white';
         });
 
         nick.forEach(link => {
-            link.style.color = '#E9ECEF'; 
+            link.style.color = '#E9ECEF';
         });
 
         iconI.forEach(link => {
-            link.style.color = 'white'; 
+            link.style.color = 'white';
         });
 
         descripcion.forEach(link => {
-            link.style.color = '#E9ECEF'; 
+            link.style.color = '#E9ECEF';
         });
 
 
@@ -63,5 +63,5 @@ editarTodo.addEventListener("click", () => {
     } else {
         location.reload()
     }
-    
+
 });

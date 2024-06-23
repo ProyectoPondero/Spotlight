@@ -11,9 +11,9 @@ body {
     background-position: center;
     grid-template-rows: 10% auto 10%;
     grid-template-areas:
-    "up"
-    "medium"
-    "down";
+        "up"
+        "medium"
+        "down";
 }
 
 @media (max-width: 600px) {
@@ -29,7 +29,7 @@ body {
 }
 
 body header {
-    background:linear-gradient(#000000, transparent);
+    background: linear-gradient(#000000, transparent);
     color: #dbc7bd;
     grid-area: up;
     display: flex;
@@ -41,7 +41,7 @@ header div img {
     width: 45px;
 }
 
-.titulo{
+.titulo {
     font-size: 30px;
     margin-top: 5px;
     margin-left: 13px;
@@ -94,7 +94,7 @@ body footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background:linear-gradient(transparent, #000000);
+    background: linear-gradient(transparent, #000000);
     color: #dbc7bd;
     grid-area: down;
     display: flex;

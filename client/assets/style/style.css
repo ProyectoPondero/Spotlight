@@ -1,24 +1,24 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: "north";
     src: url(/assets/fonts/north-free-sans-serif-typeface.zip);
     font-weight: bold;
     font-style: bold;
 }
 
-.contenedorNav{
+.contenedorNav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.navLinks a{
+.navLinks a {
     text-decoration: none;
     color: rgb(17, 17, 17);
     font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +29,7 @@
     margin-top: 5px;
 }
 
-.botonesNav{
+.botonesNav {
     text-decoration: none;
     color: rgb(248, 248, 248);
     font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +39,8 @@
     margin-left: 45px;
     margin-top: 5px;
 }
-.navLinks a:hover{
+
+.navLinks a:hover {
     color: #000000;
     border-radius: 15px;
     background-color: #c57431;
@@ -48,50 +49,50 @@
     transition: 0.7s;
 }
 
-.logoPag{
+.logoPag {
     display: flex;
     justify-content: center;
     margin-top: 13px;
     align-items: center;
 }
 
-.titulo{
+.titulo {
     font-size: 30px;
     margin-top: 5px;
     margin-left: 13px;
     font-family: "north";
 }
 
-.titulo:hover{
+.titulo:hover {
     color: #222222;
     font-size: 31px;
     transition: 0.5s;
 }
 
-.iconoPag{
+.iconoPag {
     height: 45px;
     margin-top: 6px;
 }
 
-body{
+body {
     display: grid;
     grid-template-columns: 0.40fr 1.60fr 0.36fr;
     grid-template-rows: auto;
     grid-template-areas: "header header header"
-    "aside1 mein aside2";
+        "aside1 mein aside2";
 }
 
-.header{
+.header {
     grid-area: header;
     height: 80px;
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
-    background: linear-gradient(#434349, #d8d8d8) ;
+    background: linear-gradient(#434349, #d8d8d8);
 }
 
-.mein{
+.mein {
     grid-area: mein;
     padding: 100px;
     height: 100%;
@@ -101,7 +102,7 @@ body{
 
 }
 
-.publicacion{
+.publicacion {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -111,20 +112,20 @@ body{
     border-radius: 20px;
 }
 
-.publicacionUsuario{
+.publicacionUsuario {
     display: flex;
     align-items: center;
     padding: 7px;
 }
 
-.nombreUsuarioRegistrado{
+.nombreUsuarioRegistrado {
     margin-left: 5px;
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
-.foto{
+.foto {
     height: 55px;
     width: 56px;
     margin-top: 5px;
@@ -132,35 +133,35 @@ body{
     border: solid 3px #335C67;
 }
 
-.nombreUsuario{
+.nombreUsuario {
     margin-left: 77px;
     margin-top: 15px;
 }
 
-.descripcion{
+.descripcion {
     padding: 10px;
     font-size: 18px;
     color: rgb(0, 0, 0);
 }
 
-.contenido{
+.contenido {
     display: flex;
     justify-content: center;
 
 }
 
-.contenidoImagen{
+.contenidoImagen {
     height: 250px;
     width: 250px;
     border-radius: 5px;
 }
 
-.videoUsuario2{
+.videoUsuario2 {
     height: 400px;
     width: 250px;
 }
 
-.asideIzq{
+.asideIzq {
     grid-area: aside1;
     padding-top: 20px;
     margin-top: 80px;
@@ -173,7 +174,7 @@ body{
 }
 
 
-.asideDer{
+.asideDer {
     grid-area: aside2;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, 1fr);
@@ -184,92 +185,92 @@ body{
     width: auto;
 }
 
-.imagenesPromocionadas{
+.imagenesPromocionadas {
     display: flex;
     justify-content: center;
 }
 
-.imagen1{
+.imagen1 {
     width: 50px;
     height: 200px;
-    border-radius:25px ;
+    border-radius: 25px;
     border: solid 3px rgb(15, 15, 15);
 }
 
-.imagen1:hover{
+.imagen1:hover {
     width: 150px;
     height: 200px;
 }
 
-.imagen2{
+.imagen2 {
     width: 50px;
     height: 200px;
-    border-radius:25px ;
+    border-radius: 25px;
     border: solid 3px rgb(0, 0, 0);
 }
 
-.imagen2:hover{
+.imagen2:hover {
     width: 150px;
     height: 200px;
 }
 
-.imagen3{
+.imagen3 {
     width: 50px;
-    border-radius:25px ;
+    border-radius: 25px;
     border: solid 3px rgb(14, 14, 14);
 
 }
 
-.imagen3:hover{
+.imagen3:hover {
     width: 150px;
     height: 200px;
 }
 
-.esteHome{
+.esteHome {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.opcionesNav{
+.opcionesNav {
     padding-left: 10px;
 }
 
-.letraSoporte{
+.letraSoporte {
     font-family: "north";
     font-size: 20px;
 }
 
-.iconI button{
+.iconI button {
     display: flex;
     justify-content: center;
     font-family: "north";
     font-size: 20px;
 }
 
-.iconI{
+.iconI {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 
-.iconosNavizq{
+.iconosNavizq {
     margin-right: 10px;
     color: orange;
 }
 
-.soport button{
-    background-color:  #d8d8d8;
+.soport button {
+    background-color: #d8d8d8;
     font-family: "north";
 }
 
-.motivacion{
+.motivacion {
     padding: 5px;
 }
 
 
-.filtros{
+.filtros {
     width: 95px;
     margin-bottom: 15px;
     padding: 50px;
@@ -277,16 +278,17 @@ body{
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
 
-.fa-solid.fa-sun{
+.fa-solid.fa-sun {
     color: rgb(250, 246, 2);
 }
 
-.contenedorNav button{
+.contenedorNav button {
     background-color: #000000;
     height: 30px;
     width: 33px;
 }
-.setLight{
+
+.setLight {
     display: flex;
     color: rgb(243, 243, 243);
     align-items: center;
@@ -297,7 +299,7 @@ body{
     border-radius: 16px;
 }
 
-.menu .setLight{
+.menu .setLight {
     display: flex;
     justify-content: flex-end;
 }
@@ -309,14 +311,14 @@ body{
     border-color: black;
 }
 
-.iconIzq{
+.iconIzq {
     color: rgb(0, 0, 0);
 }
 
 /* CODIGO DE LA HAMBURGUESA */
 
 .hamburger-icon {
-    display: none; 
+    display: none;
     width: 35px;
     height: 30px;
     flex-direction: column;
@@ -334,7 +336,7 @@ body{
 }
 
 .menu {
-    display: none; 
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 50px;
@@ -364,42 +366,42 @@ body{
 
 @media (max-width: 800px) {
 
-    body{
+    body {
         display: grid;
         grid-template-columns: 0.35fr 1.60fr 0.33fr;
         grid-template-rows: auto;
         grid-template-areas: "header header header"
-        "mein mein mein";
+            "mein mein mein";
     }
 
-    .mein{
+    .mein {
         padding-right: 0;
         padding-left: 140px;
     }
 
-    .asideDer{
+    .asideDer {
         display: none;
     }
 }
 
 @media(max-width: 720px) {
-    body{
+    body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "header header header"
-        "mein mein mein";
+            "mein mein mein";
     }
 
-    .mein{
+    .mein {
         padding-left: 0;
     }
 
-    .contenedorNav .botonLuna{
+    .contenedorNav .botonLuna {
         display: none;
     }
 
-    .asideIzq{
+    .asideIzq {
         display: none;
     }
 
@@ -407,15 +409,15 @@ body{
         display: flex;
     }
 
-    .navLinks a{
+    .navLinks a {
         display: none;
     }
 
-    .iconIzq{
+    .iconIzq {
         color: rgb(35, 30, 51);
     }
 
-    .asideDer{
+    .asideDer {
         display: none;
     }
 
