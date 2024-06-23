@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/img-cris/bg-prueba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas:
+    "up"
+    "medium"
+    "down";
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(../img/img-cris/bg-prueba-small.jpg);
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        background-position: top center;
+    }
+}
+
+body header {
+    background:linear-gradient(#000000, transparent);
+    color: #dbc7bd;
+    grid-area: up;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    width: 45px;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 13px;
+    font-family: "north";
+}
+
+body main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: medium;
+    height: 80vh;
+}
+
+main .boton {
+    border: 2px solid #d63d00dc;
+    color: #dbc7bd;
+    transition: all .5s;
+}
+
+main .boton:hover {
+    background-color: #d63d00dc;
+    color: #dbc7bd;
+    transform: scale(1.1);
+}
+
+.modal-header {
+    background-color: #d63d00dc;
+    color: #FBF9F8;
+}
+
+.modal-footer .boton1 {
+    background-color: #ca3900;
+    color: #dbc7bd;
+    transition: all .5s;
+}
+
+.modal-footer .boton1:hover {
+    background-color: #ae3100;
+}
+
+.modal-footer .boton2 {
+    background-color: #FBF9F8;
+    border: 1px solid #ca3900;
+    color: #ca3900;
+    transition: all .5s;
+}
+
+body footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background:linear-gradient(transparent, #000000);
+    color: #dbc7bd;
+    grid-area: down;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
