@@ -58,7 +58,7 @@ body main {
 }
 
 main .boton {
-    border: 2px solid #d63d00dc;
+    background-color: #d63d00dc;
     color: #dbc7bd;
     transition: all .5s;
 }
@@ -66,7 +66,7 @@ main .boton {
 main .boton:hover {
     background-color: #d63d00dc;
     color: #dbc7bd;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .modal-header {
