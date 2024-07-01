@@ -1,0 +1,375 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "north";
+    src: url(/assets/fonts/north-free-sans-serif-typeface.zip);
+    font-weight: bold;
+    font-style: bold;
+}
+
+.opcionesNav{
+    padding-left: 0;
+}
+
+.titulo{
+    font-size: 27px;
+    font-family: "north";
+}
+
+.titulo:hover{
+    color: #222222;
+    font-size: 31px;
+    transition: 0.5s;
+}
+
+.iconoPag{
+    height: 45px;
+    margin-top: 6px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"aside1 mein"
+    "pie pie";
+}
+
+.header{
+    display: none;
+}
+
+.mein{
+    grid-area: mein;
+    height: 100%;
+    background-color: #d8d8d8;
+}
+
+.contenedorNav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.asideIzq{
+    grid-area: aside1;
+    height: 100%;
+    background-color: #d8d8d8;
+    border-right: solid 1px gray;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    grid-area: pie;
+    background-color: #222222;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.esteHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconI button{
+    display: flex;
+    justify-content: center;
+    font-family: "north";
+    font-size: 20px;
+}
+
+.iconI{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.iconosNavizq{
+    margin-right: 10px;
+    color: orange;
+}
+
+.soport button{
+    background-color:  #d8d8d8;
+    font-family: "north";
+}
+
+.motivacion{
+    padding: 5px;
+}
+
+.logoPag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.logoIzq{
+    width: 40px;
+}
+
+.titulo{
+    margin-left: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.indicaciones{
+    font-size: 18px;
+}
+
+
+.tituloSoporte{
+    background-image: url(../img/imagenes-Marcelo/mujer-esta-trabajando-engranajes-e-iconos-gente-negocios_666034-620.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 300px 250px 250px 300px rgba(46, 46, 46, 0.5);
+    padding-top: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorForm{
+    display: flex;
+    justify-content: center;
+}
+
+#asunto{
+    width: 100%;
+    height: 30px;
+}
+
+#opciones{
+    width: 200px;
+}
+
+.formularioSoporte{
+    background: linear-gradient(orange,orange, transparent,transparent,  orange);
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.archivos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#descripcion{
+  width: 100%;
+  max-height: 100%;
+}
+
+#opciones{
+    height: 30px;
+    width: 70%;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 5px;
+    height: 35px;
+    background-color: rgb(245, 211, 20);
+    color: black;
+}
+
+
+.enviarTicket{
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    background-color: #e28e11;
+}
+
+/* Aquí se intentará hacer un cambio del background con un boton*/
+
+.fa-solid.fa-sun{
+    color: rgb(250, 246, 2);
+}
+
+.contenedorNav button{
+    background-color: #000000;
+    height: 30px;
+    width: 33px;
+}
+.setLight{
+    display: flex;
+    color: rgb(243, 243, 243);
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    margin-top: 25px;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.menu .setLight{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.setLight:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(59, 59, 59);
+    border-color: black;
+}
+
+.iconIzq{
+    color: rgb(0, 0, 0);
+}
+
+/* CODIGO DE LA HAMBURGUESA */
+
+.hamburger-icon {
+    display: none; 
+    width: 35px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hamburger-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #f5f1f1;
+    border-radius: 2px;
+}
+
+.menu {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.menu-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media(max-width: 780px) {
+    body{
+        display: grid;
+        grid-template-areas: "header header header"
+        "mein mein mein"
+        "pie pie pie";
+    }
+
+    .header{
+        display: inline;
+        grid-area: header;
+        background-color: #d8d8d8;
+    }
+
+    .asideIzq{
+        display: none;
+    }
+
+    .mein{
+        grid-area: mein;
+    }
+
+
+    .pie{
+        display: flex;
+        grid-area: pie;
+        background-color: black;
+    }
+
+    .logoPag{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 0;
+        width: 85%;
+    }
+    /* Hamburguesa */
+    .hamburger-icon {
+        display: none;
+        width: 35px;
+        height: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    .hamburger-icon div {
+        width: 100%;
+        height: 4px;
+        background-color: #e0a969;
+        border-radius: 2px;
+    }
+    
+    .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .menu-item {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+    
+    .menu-item:hover {
+        background-color: #f0f0f0;
+    }
+}
