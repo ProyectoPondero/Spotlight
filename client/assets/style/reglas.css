@@ -19,6 +19,17 @@ p{
     margin-top: 5px;
     border-radius: 4px;
 }
+.container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px; 
+}
+.col-md-5{
+    border: solid 2px black;
+    border-radius: 13px;
+
+}
 
 @font-face {
     font-family: "north";
