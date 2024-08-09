@@ -18,10 +18,19 @@
 .titulo{
     font-size: 27px;
     font-family: "north";
+    color: white;
+}
+
+.iconI span{
+    color: white;
+}
+
+.iconI span:hover{
+    color: black;
 }
 
 .titulo:hover{
-    color: #222222;
+    color: #b8b8b8;
     font-size: 31px;
     transition: 0.5s;
 }
@@ -45,19 +54,15 @@ body{
 
 .mein{
     grid-area: mein;
-    height: 100%;
-    background-color: #d8d8d8;
+    height: auto;
+    background-color: #343A40;
 }
 
-.contenedorNav{
-    display: flex;
-    justify-content: space-around;
-}
 
 .asideIzq{
     grid-area: aside1;
     height: 100%;
-    background-color: #d8d8d8;
+    background-color: #343A40;
     border-right: solid 1px gray;
 }
 
@@ -98,11 +103,11 @@ body{
 
 .iconosNavizq{
     margin-right: 10px;
-    color: orange;
+    color: #FAA307;
 }
 
 .soport button{
-    background-color:  #d8d8d8;
+    background-color: #343A40 ;
     font-family: "north";
 }
 
@@ -125,84 +130,6 @@ body{
     margin-left: 0;
     padding-left: 5px;
     padding-top: 5px;
-}
-
-.indicaciones{
-    font-size: 18px;
-}
-
-
-.tituloSoporte{
-    background-image: url(../img/imagenes-Marcelo/mujer-esta-trabajando-engranajes-e-iconos-gente-negocios_666034-620.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: inset 300px 250px 250px 300px rgba(46, 46, 46, 0.5);
-    padding-top: 20px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedorForm{
-    display: flex;
-    justify-content: center;
-}
-
-#asunto{
-    width: 100%;
-    height: 30px;
-}
-
-#opciones{
-    width: 200px;
-}
-
-.formularioSoporte{
-    background: linear-gradient(orange,orange, transparent,transparent,  orange);
-    width: 80%;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.archivos{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#descripcion{
-  width: 100%;
-  max-height: 100%;
-}
-
-#opciones{
-    height: 30px;
-    width: 70%;
-}
-
-input[type="file"]{
-    display: none;
-}
-
-label{
-    display: flex;
-    justify-content: center;
-    padding: 4px;
-    border-radius: 5px;
-    height: 35px;
-    background-color: rgb(245, 211, 20);
-    color: black;
-}
-
-
-.enviarTicket{
-    padding: 5px;
-    border-radius: 5px;
-    width: 80px;
-    background-color: #e28e11;
 }
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
@@ -371,5 +298,9 @@ label{
     
     .menu-item:hover {
         background-color: #f0f0f0;
+    }
+
+    .titulo{
+        font-size: 15px;
     }
 }

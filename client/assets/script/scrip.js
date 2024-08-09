@@ -31,8 +31,7 @@ const editarTodo = document.getElementById("modeColor");
 //constantes para las publicaciones
 const nick = document.querySelectorAll(".nombreUsuarioRegistrado")
 const descripcion = document.querySelectorAll(".descripcion")
-const publicarAlgo1 = document.getElementsByClassName("subirAlgo")
-const publicarAlgo2 = document.getElementsByClassName("motivacion")
+
 
 //constantes para el modo oscuro
 const main = document.getElementsByClassName("mein");
@@ -43,44 +42,47 @@ const asideDer = document.getElementsByClassName("asideDer")
 //constantes del nav
 const links = document.querySelectorAll('.navLinks.container i');
 const links2 = document.querySelectorAll('.navLinks.container span');
-const titulo = document.getElementsByClassName("titulo")
+const titulo = document.getElementsByClassName("titulo");
 const iconI = document.querySelectorAll(".botonIzqi");
-const soport = document.getElementsByClassName("letraSoporte") 
-const backSoporte = document.getElementsByClassName("botonSoportebtn")
+const soport = document.getElementsByClassName("letraSoporte");
+const insentivar = document.getElementsByClassName("insentivarPu") 
+const confianza = document.getElementsByClassName("confianza") 
+const aprender = document.getElementsByClassName("aprender") 
+
 
 
     editarTodo.addEventListener("click", () => {
         if (editarTodo.id == "modeColor" ) {
             editarTodo.id = "otroModo"
             editarTodo.innerHTML = `<i class="fa-solid fa-sun"></i>`
-            main[0].style.backgroundColor = "#343A40"
-            header[0].style.background = "#343A40"
-            asideIzq[0].style.background = "#343A40"
-            asideDer[0].style.background = "#343A40"
-            titulo[0].style.color = "white"
-            soport[0].style.color = "white"
-            backSoporte[0].style.backgroundColor = "#343A40";
-            publicarAlgo1[0].style.color = "#F48C06"
-            publicarAlgo2[0].style.color = "white"
+            main[0].style.backgroundColor = "#EDEDE9"
+            header[0].style.background = "#EDEDE9"
+            asideIzq[0].style.background = "#EDEDE9"
+            asideDer[0].style.background = "#EDEDE9"
+            titulo[0].style.color = "black"
+            insentivar[0].style.color = "black"
+            confianza[0].style.color = "black"
+            aprender[0].style.color = "black"
+    
 
-            links.forEach(link => {
+            links.forEach(link  => {
                 link.style.color = '#FAA307'; 
             });
             
             links2.forEach(link => {
-                link.style.color = 'white'; 
+                link.style.color = 'black'; 
             });
 
             nick.forEach(link => {
-                link.style.color = '#E9ECEF'; 
+                link.style.color = "black"; 
             });
 
             iconI.forEach(link => {
-                link.style.color = 'white'; 
+                link.style.color = 'black'; 
             });
 
             descripcion.forEach(link => {
-                link.style.color = '#E9ECEF'; 
+                link.style.color = 'black'; 
             });
 
 

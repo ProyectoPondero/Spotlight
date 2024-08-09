@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -17,16 +17,23 @@
     align-items: center;
 }
 
+.navLinks{
+    margin-right: 0;
+}
 
 .navLinks a{
     text-decoration: none;
-    color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     border-color: #2e2e2e;
     border-radius: 4px;
     margin-left: 35px;
     margin-top: 5px;
+}
+
+.navLinks i{
+    color: #FAA307;
 }
 
 .botonesNav{
@@ -40,12 +47,11 @@
     margin-top: 5px;
 }
 .navLinks a:hover{
-    color: #000000;
+    color: white;
     border-radius: 15px;
-    background-color: #c57431;
-    padding: 6px;
-    font-size: 20px;
-    transition: 0.7s;
+    padding: 4px;
+    font-size: 19px;
+    transition: 0.4s;
 }
 
 .logoPag{
@@ -60,10 +66,11 @@
     margin-top: 5px;
     margin-left: 13px;
     font-family: "north";
+    color: white;
 }
 
 .titulo:hover{
-    color: #222222;
+    color: #e2e2e2;
     font-size: 31px;
     transition: 0.5s;
 }
@@ -88,7 +95,7 @@ body{
     top: 0;
     width: 100%;
     left: 0;
-    background: linear-gradient(#434349, #d8d8d8) ;
+    background-color: #343A40;
 }
 
 .mein{
@@ -97,7 +104,7 @@ body{
     height: 100%;
     margin-top: 80px;
     padding-top: 70px;
-    background-color: #d8d8d8;
+    background-color: #343A40;
 
 }
 
@@ -119,7 +126,7 @@ body{
 
 .nombreUsuarioRegistrado{
     margin-left: 5px;
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -140,13 +147,12 @@ body{
 .descripcion{
     padding: 10px;
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .contenido{
     display: flex;
     justify-content: center;
-
 }
 
 .contenidoImagen{
@@ -168,8 +174,21 @@ body{
     width: 17.5%;
     height: 100%;
     top: 0;
-    background-color: #d8d8d8;
+    background-color: #343A40;
     border-right: solid 1px gray;
+}
+
+.insentivarPu{
+    color: white;
+    padding: 5px;
+}
+
+.confianza{
+    color: white;
+}
+
+.aprender{
+    color: white;
 }
 
 
@@ -179,50 +198,11 @@ body{
     grid-template-rows: repeat(4, 1fr);
     display: grid;
     margin-top: 78px;
+    padding-top: 90px;
+    padding-right: 7px;
     height: 100%;
-    background-color: #d8d8d8;
+    background-color: #343A40;
     width: auto;
-}
-
-.imagenesPromocionadas{
-    display: flex;
-    justify-content: center;
-}
-
-.imagen1{
-    width: 50px;
-    height: 200px;
-    border-radius:25px ;
-    border: solid 3px rgb(15, 15, 15);
-}
-
-.imagen1:hover{
-    width: 150px;
-    height: 200px;
-}
-
-.imagen2{
-    width: 50px;
-    height: 200px;
-    border-radius:25px ;
-    border: solid 3px rgb(0, 0, 0);
-}
-
-.imagen2:hover{
-    width: 150px;
-    height: 200px;
-}
-
-.imagen3{
-    width: 50px;
-    border-radius:25px ;
-    border: solid 3px rgb(14, 14, 14);
-
-}
-
-.imagen3:hover{
-    width: 150px;
-    height: 200px;
 }
 
 .esteHome{
@@ -245,6 +225,7 @@ body{
     justify-content: center;
     font-family: "north";
     font-size: 20px;
+    color: white;
 }
 
 .iconI{
@@ -257,22 +238,27 @@ body{
 .iconosNavizq{
     margin-right: 10px;
     color: orange;
+    padding-bottom: 5px;
 }
 
 .soport button{
-    background-color:  #d8d8d8;
+    background-color:  #343A40;
     font-family: "north";
 }
 
 .motivacion{
     padding: 5px;
+    color: white;
+}
+
+.subirAlgo{
+    color: white;
 }
 
 
-.filtros{
-    width: 95px;
-    margin-bottom: 15px;
-    padding: 50px;
+
+.letraSoporte{
+    color: white;
 }
 
 /* Aquí se intentará hacer un cambio del background con un boton*/
@@ -329,7 +315,7 @@ body{
 .hamburger-icon div {
     width: 100%;
     height: 4px;
-    background-color: #f5f1f1;
+    background-color: #000000;
     border-radius: 2px;
 }
 
