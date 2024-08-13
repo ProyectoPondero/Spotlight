@@ -2,10 +2,10 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
-import authRoutes from './router/auth.routes.js';
+import { authRoutes } from './router/auth.routes.js';
 import { connectDB } from "./dataBase/dbConfig.js";
 
-// Initializations
+// Inicializacion
 const app = express();
 const PORT = 3000;
 
@@ -16,10 +16,10 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors());
 
-// Routes
+// Ruras
 app.use('/api/user', authRoutes);
 
-// Connect to DB
+// Conexion con la base de datos
 connectDB()
 
 // Server

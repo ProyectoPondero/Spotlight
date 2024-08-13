@@ -1,8 +1,8 @@
 import { sequelize } from "../dataBase/dbConfig.js";
 import { DataTypes } from "sequelize";
 
-// Define the User model
-const User = sequelize.define('user', {
+// Definicion del esquema
+export const User = sequelize.define('user', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -21,6 +21,3 @@ const User = sequelize.define('user', {
         allowNull: false
     }
 });
-
-// Export
-export default User;

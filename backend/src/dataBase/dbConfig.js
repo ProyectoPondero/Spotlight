@@ -1,15 +1,15 @@
 import { Sequelize } from "sequelize";
 
-// Database connection from Sequelize
+// Conexion a la base de datos con Sequelize
 export const sequelize = new Sequelize(
-    'spotbeta', // Database name
+    'spotbeta',
     'root',
     '', {
-    host: 'localhost', // Database host
-    dialect: 'mysql'    // Database dialect
+    host: 'localhost',
+    dialect: 'mysql'
 });
 
-// Test connection
+// Probando conexion
 export const connectDB = async () => {
     try {
         await sequelize.sync();

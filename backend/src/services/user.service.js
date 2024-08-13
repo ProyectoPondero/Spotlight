@@ -1,12 +1,11 @@
-import User from '../model/user.model.js';
+import { User } from '../model/user.model.js';
 import bcryptHelper from '../helpers/bcrypt.js';
 
-// Variables
-const userService = {};
+export const userService = {};
 
 // CRUD Functions
 
-// Create a new user
+// Crear nuevo usuario
 userService.createUser = async (user) => {
     try {
         const userExists = await userService.getUserByEmail(user.email);
@@ -28,7 +27,7 @@ userService.createUser = async (user) => {
     }
 };
 
-// Login a user
+// Loguear un usuario
 userService.login = async (email, password) => {
     try {
         const user = await userService.getUserByEmail(email);
@@ -45,7 +44,7 @@ userService.login = async (email, password) => {
     }
 };
 
-// Find user to login
+// Encontrar un usuario para loguear
 userService.getUserByEmail = async (email) => {
     try {
         return await User.findOne({ where: { email } });
@@ -59,7 +58,7 @@ userService.getUserByEmail = async (email) => {
 //     try {
 //         return await User.findAll();
 //     } catch (error) {
-//         console.log(error);   
+//         console.log(error);
 //     }
 // };
 
@@ -94,6 +93,3 @@ userService.getUserByEmail = async (email) => {
 //         console.log(error);
 //     }
 // };
-
-// Export
-export default userService;
