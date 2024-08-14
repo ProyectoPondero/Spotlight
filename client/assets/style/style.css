@@ -21,6 +21,39 @@
     margin-right: 0;
 }
 
+.contenedorConv{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.iconoBanner{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 42px;
+}
+
+.custom-bg{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: red;
+}
+
+.botonConvocatoria{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #242424;
+    color: white;
+}
+
+.botonConvocatoria:hover{
+    color: #fbff06;
+    transition: 0.5s;
+}
+
 .navLinks a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -96,6 +129,7 @@ body{
     width: 100%;
     left: 0;
     background-color: #343A40;
+    z-index: 1;
 }
 
 .mein{
@@ -184,11 +218,11 @@ body{
 }
 
 .confianza{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .aprender{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 

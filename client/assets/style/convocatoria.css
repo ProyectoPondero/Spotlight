@@ -11,6 +11,69 @@
     font-style: bold;
 }
 
+#convocatorias-container{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#convocatorias-container div article{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(#e0ab39, transparent);
+    border-radius: 7px;
+    border: solid 2px rgb(7, 6, 6);
+}
+
+.tituloConvocatoria{
+    font-size: 20px;
+    padding-top: 5px;
+    color: #002849;
+    font-family: sans-serif;
+    opacity: 20px;
+}
+
+.imagenConvocatoria{
+    height: 120px;
+    width: 160px;
+    border-radius: 30px;
+}
+
+.parrafoConvocatoria{
+    padding: 5px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002849;
+}
+
+.linkConvocatoria{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botonConv{
+margin-top: 8px;
+height: 50px;
+padding: 7px;
+border-radius: 5px;
+background-color: #3d3d3c;
+color: rgb(255, 201, 100);
+}
+
+.botonConv:hover{
+    background-color: #292929;
+}
+
+
+
 .opcionesNav{
     padding-left: 0;
 }
@@ -218,7 +281,7 @@ body{
 }
 
 
-@media(max-width: 780px) {
+@media(max-width: 700px) {
     body{
         display: grid;
         grid-template-areas: "header header header"
@@ -229,7 +292,7 @@ body{
     .header{
         display: inline;
         grid-area: header;
-        background-color: #d8d8d8;
+        background-color: #343A40;
     }
 
     .asideIzq{
@@ -238,7 +301,12 @@ body{
 
     .mein{
         grid-area: mein;
-        height: 100vh;
+        height: auto;
+    }
+
+    #convocatorias-container div article{
+        max-width: 300px;
+        height: auto;
     }
 
 
@@ -253,18 +321,11 @@ body{
         justify-content: flex-start;
         align-items: center;
         padding-bottom: 0;
-        width: 85%;
+        width: 87%;
     }
     /* Hamburguesa */
     .hamburger-icon {
-        display: none;
-        width: 35px;
-        height: 30px;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        cursor: pointer;
-        margin: 10px;
+        display: flex;
     }
     
     .hamburger-icon div {
@@ -274,34 +335,13 @@ body{
         border-radius: 2px;
     }
     
-    .menu {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 10px;
-        background-color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    
-    .menu-item {
-        padding: 10px 15px;
-        text-decoration: none;
-        color: #333;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .menu-item:last-child {
-        border-bottom: none;
-    }
     
     .menu-item:hover {
         background-color: #f0f0f0;
     }
 
     .titulo{
-        font-size: 15px;
+        font-size: 25px;
     }
 }
+
