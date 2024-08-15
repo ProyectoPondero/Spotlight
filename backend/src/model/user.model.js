@@ -1,23 +1,18 @@
-import { sequelize } from "../dataBase/dbConfig.js";
-import { DataTypes } from "sequelize";
+import { Schema, model } from 'mongoose';
 
-// Definicion del esquema
-export const User = sequelize.define('user', {
-    id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-    },
+const userSchema = new Schema({
     userName: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: String,
+        require: true
     },
     email: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: String,
+        require: true
     },
     password: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: String,
+        require: true
     }
 });
+
+export const userModel = model('User', userSchema);

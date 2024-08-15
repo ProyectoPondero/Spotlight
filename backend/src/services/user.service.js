@@ -1,4 +1,4 @@
-import { User } from '../model/user.model.js';
+import { userModel } from '../model/user.model.js';
 import bcryptHelper from '../helpers/bcrypt.js';
 
 export const userService = {};
@@ -13,7 +13,7 @@ userService.createUser = async (user) => {
             throw new Error('El usuario ya existe!');
         }
         const hastPassword = await bcryptHelper.hashPassword(user.password);
-        const newUser = await User.create({
+        const newUser = await userModel.create({
             userName: user.userName,
             email: user.email,
             password: hastPassword
@@ -47,7 +47,7 @@ userService.login = async (email, password) => {
 // Encontrar un usuario para loguear
 userService.getUserByEmail = async (email) => {
     try {
-        return await User.findOne({ where: { email } });
+        return await userModel.findOne({ email: email });
     }
     catch (error) {
         console.log(error);
