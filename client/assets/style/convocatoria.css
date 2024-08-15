@@ -11,65 +11,79 @@
     font-style: bold;
 }
 
+.tituloPrincipal{
+color: #d18800;
+font-weight: bold;
+padding-top: 25px;
+}
+
+.subtituloPrincipal{
+    color: white;
+}
+
 #convocatorias-container{
     display: flex;
-    padding: 30px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 25px;
+    padding: 50px;
 }
 
-#convocatorias-container div article{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    width: 350px;
-    height: 500px;
-    background: linear-gradient(#e0ab39, transparent);
-    border-radius: 7px;
-    border: solid 2px rgb(7, 6, 6);
+.contenidoCarta{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (5, 1fr);
+    width: 335px;
+    height: 570px;
+    padding: 20px;
+    background-color: #f0ad65;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0px 25px 10px rgba(0,0,0,0.2);
+    padding-bottom: 0;
+    margin-bottom: 70px;
 }
+
 
 .tituloConvocatoria{
-    font-size: 20px;
-    padding-top: 5px;
-    color: #002849;
-    font-family: sans-serif;
-    opacity: 20px;
-}
-
-.imagenConvocatoria{
-    height: 120px;
-    width: 160px;
-    border-radius: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #001b4e;
 }
 
 .parrafoConvocatoria{
-    padding: 5px;
-    font-size: 17px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #002849;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b1a1a;
 }
 
 .linkConvocatoria{
     display: flex;
-    justify-content: center;
+    border: 1px solid rgb(68, 67, 67);
+    height: 40px;
+    max-width: 150px;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(68, 32, 8);
+    position: relative;
+    left: 90px;
+    bottom: 67px;
+    box-shadow: 0px 25px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
 
-.botonConv{
-margin-top: 8px;
-height: 50px;
-padding: 7px;
-border-radius: 5px;
-background-color: #3d3d3c;
-color: rgb(255, 201, 100);
+.linkConvocatoria:hover{
+    background-color: rgb(40, 40, 40);
 }
 
-.botonConv:hover{
-    background-color: #292929;
+.imagenConvocatoria{
+    height: 200px;
+    width: 100%;
 }
 
 
@@ -82,6 +96,7 @@ color: rgb(255, 201, 100);
     font-size: 27px;
     font-family: "north";
     color: white;
+    font-weight: bold;
 }
 
 .iconI span{
@@ -105,7 +120,7 @@ color: rgb(255, 201, 100);
 
 body{
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 190px 1fr;
     grid-template-rows: auto;
     grid-template-areas:"aside1 mein"
     "pie pie";
@@ -127,6 +142,7 @@ body{
     height: 100%;
     background-color: #343A40;
     border-right: solid 1px gray;
+    position: sticky;
 }
 
 .pie{
@@ -134,6 +150,7 @@ body{
     justify-content: center;
     grid-area: pie;
     background-color: #222222;
+    z-index: 1;
 }
 
 .redesSociales{
@@ -293,6 +310,14 @@ body{
         display: inline;
         grid-area: header;
         background-color: #343A40;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        opacity: 0.95;
+    }
+
+    .tituloPrincipal{
+        padding-top: 20%;
     }
 
     .asideIzq{

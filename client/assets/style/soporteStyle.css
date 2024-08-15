@@ -54,8 +54,7 @@ body{
 
 .mein{
     grid-area: mein;
-    
-    height: auto;
+    height: 100%;
     background-color: #343A40;
     justify-content: center;
     display: flex;

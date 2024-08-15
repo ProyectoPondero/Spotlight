@@ -14,13 +14,17 @@ fetch('api.json')
           data.results.forEach(convocatoria => {
               const convocatoriaElement = document.createElement('div');
               convocatoriaElement.innerHTML =`
-              <article>
-              <h2 class="tituloConvocatoria">${convocatoria.titulo}</h2>
-              <p class="parrafoConvocatoria">${convocatoria.bajada}</p>
-              <img class="imagenConvocatoria container" src="${convocatoria.imagen}">
-              <a class="linkConvocatoria container" href="${convocatoria.link}" target="_blank"><button class="botonConv" >Más información</button></a>
+              <article class="articuloCartas">
+              <div class="contenedorCartas">
+                <div class="contenidoCarta">
+                    <h2 class="tituloConvocatoria">${convocatoria.titulo}</h2>
+                    <p class="parrafoConvocatoria">${convocatoria.bajada}</p>
+                    <img class="imagenConvocatoria" src="${convocatoria.imagen}"> 
+                </div>
+                <a class="linkConvocatoria" type="button" href="${convocatoria.link}" target="_blank">Más información</a>
+              </div>
               </article>
-                  `;
+              `;
               container.appendChild(convocatoriaElement);
           });
       } else {
