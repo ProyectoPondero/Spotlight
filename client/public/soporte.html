@@ -84,39 +84,32 @@
         </aside>
         
         <main  class="mein">
-                <div class="formulario">
-                    <h2>Propuestas</h2>
-            
-                    <form action="https://formsubmit.co/7b8af09db02e0d5d8117078ae679cd5d" method="POST">
-                        <label for="Nombre">Usuario</label>
-                        <input type="text" name="name" required minlength="4">
-            
-                        <label for="Asunto">Asunto</label>
-                        
-                        <select name="Asunto" >
-            
-                <option value="Asunto">Elige un Asunto...</option>
-                <option value="Errores del Sitio Web">Errores del Sitio Web</option>
-                <option value="Consultas">Consultas</option>
-                <option value="Sugerencias">Sugerencias</option>
-            
-            
-                        </select>
-            
-                        <label for="Comentarioos">Comentarios</label>
-                        <textarea  name="Comentarioos" required minlength="25"></textarea>
-                        <div class="botonSubmit">
-                            <input type="submit" value="Enviar" >
-                        
-                            
-                        </div>
-                        
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/client/public/soporte.html">
-                        <input type="hidden" name="_captcha" value="false"> 
-                    
+                <article class="formulario">
+                    <div class="imagenFormulario">
+                    </div>  
+                    <form id="formularioSoporte" method="POST">
+                        <section class="asuntoSoporte">
+                            <label for="Asunto">Asunto</label>
+                            <select class="selectSoporte" name="Asunto" >
+                                <option value="Asunto">Elige un Asunto...</option>
+                                <option value="Errores del Sitio Web">Errores del Sitio Web</option>
+                                <option value="Consultas">Consultas</option>
+                                <option value="Sugerencias">Sugerencias</option>
+                            </select>
+                        </section>
+                        <sectio class="seccionComentarios">
+                            <label for="Comentarioos">Comentarios</label>
+                            <textarea class="textoSoporte"  name="Comentarios" required minlength="25"></textarea>
+                        </section>
+                        <section>
+                            <input class="checkbox" type="checkbox" required>
+                            <span>Acepta los términos y condiciones.</span>
+                        </section>
+                            <div class="botonSubmit">
+                            <input type="submit" value="Enviar" >       
+                            </div> 
                     </form>
-
-                </div>
+                </article>
 
 
         </main>
