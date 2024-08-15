@@ -8,13 +8,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../assets/style/logIn.css">
+    <link rel="icon" href="../assets/img/iconoLogo.png">
     <title>Spotlight</title>
 </head>
 
 <body>
     <header>
         <div class="container d-flex justify-content-center align-items-center my-2">
-            <img class="iconoPag" src="../assets/img/iconoLogo.png" alt="iconoPrincipal"><span class="titulo">Spotlight</span>
+            <img class="iconoPag" src="../assets/img/iconoLogo.png" alt="iconoPrincipal"><span
+                class="titulo">Spotlight</span>
         </div>
     </header>
     <main>
@@ -36,31 +38,36 @@
                     <section class="modal-body">
                         <form class="row g-3" id="registerForm">
                             <div class="form-floating col-12">
-                                <input type="text" class="form-control" name="usuario" id="registroUsuario" placeholder=" ">
+                                <input type="text" class="form-control" name="usuario" id="registroUsuario"
+                                    placeholder=" " required>
                                 <label for="registroUsuario" class="form-label mx-2">Usuario</label>
                             </div>
                             <div class="form-floating col-12">
-                                <input type="email" class="form-control" name="email" id="registroEmail" placeholder=" ">
+                                <input type="email" class="form-control" name="email" id="registroEmail"
+                                    placeholder=" " required>
                                 <label for="registroEmail" class="form-label mx-2">Email</label>
                             </div>
                             <div class="form-floating col-12">
-                                <input type="password" class="form-control" name="contraseña" id="registroContraseña" placeholder=" ">
+                                <input type="password" class="form-control" name="contraseña" id="registroContraseña"
+                                    placeholder=" " required>
                                 <label for="registroContraseña" class="form-label mx-2">Contraseña</label>
                             </div>
                             <div class="form-floating col-12">
-                                <input type="password" class="form-control" name="repetirContraseña" id="registroRepetirContraseña" placeholder=" ">
-                                <label for="registroRepetirContraseña" class="form-label mx-2">Repetir Contraseña</label>
+                                <input type="password" class="form-control" name="repetirContraseña"
+                                    id="registroRepetirContraseña" placeholder=" " required>
+                                <label for="registroRepetirContraseña" class="form-label mx-2">Repetir
+                                    Contraseña</label>
                             </div>
                             <div class="col-8 ms-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="singInCheck">
+                                    <input class="form-check-input" type="checkbox" id="singInCheck" required>
                                     <label class="form-check-label" for="gridCheck">
                                         Acepto los terminos y condiciones
                                     </label>
                                 </div>
                             </div>
                             <section class="modal-footer">
-                                <button type="button" class="boton2 btn" data-bs-dismiss="modal">Cancelar</button> 
+                                <button type="button" class="boton2 btn" data-bs-dismiss="modal">Cancelar</button>
                                 <button type="submit" class="boton1 btn text-white">Registrar</button>
                             </section>
                         </form>
@@ -86,7 +93,8 @@
                     <section class="modal-body">
                         <form id="logInForm">
                             <div class="form-floating col-12 mb-3">
-                                <input type="email" class="form-control" name="email" id="ingresoEmail" placeholder="email">
+                                <input type="email" class="form-control" name="email" id="ingresoEmail"
+                                    placeholder="email">
                                 <label for="ingresoEmail" class="form-label mx-2">Email</label>
                             </div>
                             <div class="form-floating col-12 mb-3">
@@ -107,7 +115,7 @@
                             </div>
                         </form>
                     </section>
-                    </div>
+                </div>
             </div>
         </article>
 
