@@ -55,10 +55,24 @@ body {
     border-radius: 60%;
 }
 
-.perfil{
+#perfil{
     height: 220px;
     border-radius: 60%;
     width: 250px;
+}
+.cabiarPer{
+    display: grid;
+    grid-column: auto;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.cabiarPer:hover {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
 }
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {

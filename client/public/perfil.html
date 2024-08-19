@@ -52,9 +52,14 @@
         <section class="seccion-perfil-usuario">
             <div class="perfil-usuario-header">
                 <div class="perfil-usuario-portada">
-                    <div class="fotoPerfil card container">
-                        <img src="../assets/img/perfil.jpg" alt="" class="perfil">
-                    </div>
+                    
+                    <form method="post" action="#" enctype="multipart/form-data">
+                        <div>
+                          <img src="https://static.vecteezy.com/system/resources/thumbnails/020/765/399/small_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg" alt="avatar" id="perfil" /> 
+                        </div>
+                        <input type="file" name="foto" id="foto" accept="image/*" />
+                          <label for="foto">Cambiar foto</label>
+                      </form>
                 </div>
             </div>
             <div class="perfil-usuario-body">
@@ -85,7 +90,7 @@
 
         
     </div>
-    <script src="../assets/scrips/perfil.js"></script>
+    <script src="../assets/script/perfil.js"></script>
 
 </div>
 </body>
